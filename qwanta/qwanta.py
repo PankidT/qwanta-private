@@ -108,7 +108,8 @@ class Xperiment:
                 experiment = experiment, # Record experiment set with experiment name
                 message = exp,
                 sim_time = self.sim_times[exp],
-                label_record = self.label_records[exp]
+                label_record = self.label_records[exp],
+                # collectFidelityHistory= True
             )
         for exp in self.strategies_list }
 

@@ -66,7 +66,7 @@ def execute(parameter):
         gate_error = gate_error,
         measurement_error = measurement_error,
         memory_time = memory_time,
-        experiment = f'p{index}_r{repeat_th}'
+        experiment = f'p{index}_r{repeat_th}',
     )
 
     exps.execute(save_result=True)
@@ -81,7 +81,7 @@ gate_error_list = np.array([0.0005])
 mem_error_list = np.array([0.01])
 measurement_error_list =  np.array([0])
 number_of_hops_list = np.array([2]) 
-num_trajectories = 10
+num_trajectories = 5
 exp_names = ['Sheet1']
 
 parameters_set = []; index = 0
